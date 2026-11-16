@@ -3,43 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Food for All Initiative</title>
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
             background-color: #f4f7f2;
             color: #333;
+            line-height: 1.6;
         }
 
         header {
             background-color: #287044;
             color: white;
             text-align: center;
-            padding: 25px;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            margin-bottom: 8px;
         }
 
         main {
-            max-width: 800px;
-            margin: 25px auto;
-            padding: 20px;
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 25px;
             background-color: white;
+            border-radius: 8px;
         }
 
         h2 {
             color: #287044;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .food-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        .donate-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 22px;
+            background-color: #287044;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .donate-link:hover {
+            background-color: #194c2d;
         }
 
         footer {
             background-color: #287044;
             color: white;
             text-align: center;
-            padding: 15px;
-        }
-
-        a {
-            color: #287044;
+            padding: 18px;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -52,6 +90,7 @@
     </header>
 
     <main>
+
         <h2>Our Mission</h2>
 
         <p>
@@ -59,7 +98,14 @@
             organization based in Nairobi, Kenya. Our mission
             is to fight food insecurity by providing food
             assistance to vulnerable families and communities.
+            We believe everyone deserves access to nutritious food.
         </p>
+
+        <img
+            class="food-image"
+            src="https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?auto=format&fit=crop&fm=jpg&q=80&w=1200"
+            alt="Volunteers sorting food donations for the community"
+        >
 
         <h2>Our Programmes</h2>
 
@@ -73,12 +119,13 @@
 
         <p>
             Join us in helping families access nutritious food.
-            Your contribution can make a difference.
+            Your contribution can make a difference in the community.
         </p>
 
-        <p>
-            <a href="donate.html">Click here to support our initiative</a>
-        </p>
+        <a href="donate.html" class="donate-link">
+            Support Our Initiative
+        </a>
+
     </main>
 
     <footer>
